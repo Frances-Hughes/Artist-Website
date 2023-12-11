@@ -8,7 +8,12 @@ function Home() {
       <section className="features">
         <div className="feature">
           <h2>Feature 1</h2>
-          <p>Description of Feature 1.</p>
+          <p>
+            Hello and welcome to my creative space! I'm Flora Tan a passionate
+            acrylic artist on a journey to explore the intersection of
+            nature/landscapes through my work. Join me as I translate emotions
+            into visual stories, weaving dreams onto canvas.
+          </p>
         </div>
         <div className="feature">
           <h2>Feature 2</h2>
