@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
+}
+
+/* Landing Page */
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.home {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+/* Impressive h1 Header */
+h1 {
+  position: relative;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  color: #3498db;
+  margin: 50px 0;
+}
+
+h1:before,
+h1:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  border-bottom: 2px solid #3498db;
+  width: 50%;
+  height: 1px;
+}
+
+h1:before {
+  right: 100%;
+  margin-right: 15px;
+}
+
+h1:after {
+  left: 100%;
+  margin-left: 15px;
+}
+
+h1 span {
+  background-color: #fff;
+  padding: 0 20px;
+  z-index: 1;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.feature {
+  flex: 1;
+  text-align: center;
+  margin: 0 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.nav {
+  list-style-type: none;
+  display: flex;
+}
+
+/* -------------------------------- Contact me start ----------------------------- */
+
+/* -------------------------------- Contact me end ----------------------------- */
+
+li {
+  padding: 0px 0px;
+}
+
+/* ------------------------------ NAV BAR BELOW --------------------------------------- */
+
+:root {
+  --mainColor: rgb(0, 0, 0);
+  --mainColorLight: #ffffff;
+  --secondaryColor: #cecece;
+  --textColor: rgb(255, 255, 255);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 2rem;
+  background-color: var(--mainColor);
+  color: var(--textColor);
+  width: 100%;
+}
+
+nav a {
+  margin: 0 1rem;
+  color: var(--textColor);
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--secondaryColor);
+}
+
+header .nav-btn {
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--textColor);
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.8rem;
+}
+
+header div,
+nav {
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  header .nav-btn {
+    visibility: visible;
+    opacity: 0.5;
+  }
+
+  header nav {
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: var(--mainColor);
+    transition: 1s;
+  }
+
+  header .responsive_nav {
+    transform: translateY(100vh);
+  }
+
+  nav .nav-close-btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+
+  nav a {
+    font-size: 1.5rem;
+  }
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li a {
+  padding: 0 20px;
+  text-decoration: none;
+  font-weight: 800;
+  color: rgb(98, 161, 255);
+  display: inline-block;
+}
+
+li a:after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 0;
+  background: rgb(255, 255, 255);
+  transition: all 0.5s;
+}
+
+li a:hover::after {
+  width: 100%;
+}
