@@ -52,7 +52,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div>
+    <div className="contact-me">
       <h1>Contact Me</h1>
       <form onSubmit={handleSubmit}>
         <label>
