@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Artwork 1",
+    "description": "Description for Artwork 1",
+    "price": "$100",
+    "image": "artwork1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Artwork 2",
+    "description": "Description for Artwork 2",
+    "price": "$150",
+    "image": "artwork2.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Artwork 3",
+    "description": "Description for Artwork 3",
+    "price": "$120",
+    "image": "artwork3.jpg"
+  }
+]
