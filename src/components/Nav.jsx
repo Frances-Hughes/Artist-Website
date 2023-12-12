@@ -4,6 +4,7 @@ import "../index.css";
 
 import { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { HiShoppingCart } from "react-icons/hi";
 
 function Nav() {
   const navRef = useRef();
@@ -20,11 +21,16 @@ function Nav() {
             <li>
               <Link to="/">Home</Link>
             </li>
-            <li className="gallery">
+            <li>
               <Link to="/gallery">My Gallery</Link>
             </li>
             <li>
               <Link to="/contact">Contact Me</Link>
+            </li>
+            <li>
+              <Link to="/cart">
+                <HiShoppingCart />
+              </Link>
             </li>
           </ul>
         </div>
