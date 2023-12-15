@@ -22,6 +22,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--accent-color);
 }
 
 .home {
@@ -267,4 +268,119 @@ button {
 button:hover {
   background-color: var(--accent-color);
   color: var(--secondary-color);
+}
+
+/* GALLERY BELOW */
+.gallery-page {
+  margin-top: 145px; /* Top margin of 145px */
+  margin-left: 40px; /* Left margin of 40px */
+  margin-right: 40px; /* Right margin of 40px */
+  box-sizing: border-box; /* Include padding and border in the width calculation */
+}
+
+/* Grid container styles */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-template-rows: repeat(4, 1fr); /* 4 rows */
+  gap: 10px; /* Gap between grid items */
+  width: 100%;
+}
+
+/* Grid item styles */
+.grid-item {
+  display: flex;
+  flex-direction: column; /* Items stack vertically within each grid item */
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc; /* Add borders for better visualization */
+  padding: 10px;
+  text-align: center;
+  min-height: 100%; /* Ensure the grid item fills the entire grid cell */
+}
+
+/* Style specific grid items if needed */
+.grid-item p {
+  font-size: 16px;
+  margin-bottom: 10px; /* Add spacing between paragraphs */
+}
+
+.grid-item img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* Fit the image into the box while maintaining aspect ratio */
+}
+
+/* LOOK AT THIS ONE */
+/* 
+ /* */
+/* 
+ */
+/*  */
+
+/*  */
+/*  */
+/*  */
+
+.container {
+  margin: 4rem 6rem 4rem 6rem;
+  padding-bottom: 4rem;
+  font-family: "Sono", sans-serif;
+  font-weight: bold;
+  font-size: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  justify-content: start;
+  overflow: auto;
+}
+
+/* Style the grid items */
+.container img {
+  width: 100%;
+}
+
+.container div {
+  padding: 1rem;
+}
+
+.container div h2,
+.container div p {
+  opacity: 0; /* Initial opacity set to 0 */
+  transition: opacity 0.6s ease; /* Transition for opacity */
+}
+
+.fadeInUp {
+  animation: fadeInUp 0.6s;
+}
+
+/* Keyframes for fadeInUp animation */
+
+.container div h2 {
+  font-size: 2rem;
+}
+
+.container div p {
+  font-size: 1.2rem;
+}
+
+/* Add a class to target the elements you want to delay */
+.delayed-animation {
+  opacity: 0;
+  animation: fadeInUp 0.6s;
+  animation-fill-mode: forwards;
+}
+
+/* Keyframes for fadeInUp animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
