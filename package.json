@@ -35,6 +35,7 @@
     "build": "run-s build:client build:server",
     "build:client": "vite build",
     "build:server": "tsc -p server/tsconfig.json",
+    "build:css": "tailwindcss build styles.css -o output.css",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
     "knex": "knex --knexfile ./server/db/knexfile.js"
   },
